@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <script src="../js/controlador.js"></script>
+    <script src="../js/util.js"></script>
+    <title>Mantenedor WEB</title>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="contUno">
+            <form action="#" method="GET">
+            <table>
+                <th colspan="2">
+                    <h4>Mantenedor de productos</h4>
+                </th>
+                <tr>
+                    <td> <p>Nombre</p> <input type="text" name="textNombre" id="textNombre"> </td>
+                    <td> <p>Precio</p> <input type="text" name="textPrecio" id="textPrecio" onkeyup="formatCurrency(this)" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$"> </td>
+                </tr>
+                <tr>
+                    <td> <p>Tipo de producto</p> <input type="text" name="textTipo" id="textTipo"> </td>
+                    <td> <p>Codigo</p> <input type="text" name="textCodigo" id="textCodigo"> </td>
+                </tr>
+                <tr>
+                    <td> <p>Unidad de medida</p> <input type="text" name="textUnidad" id="textUnidad"> </td>
+                    <td> <p>Cantidad</p> <input type="text" name="textCantidad" id="textCantidad"> </td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <br> <input type="checkbox" name="checkProducto" id="checkProducto"> Compra de producto</td>
+                </tr>
+                <tr>
+                    <td> <br> <input type="button" value="Enviar" onclick="validarForm()"> </td>
+                </tr>
+            </table>
+            </form>
+        </div>
+        <div id="contDos">
+
+        </div>
+        <div id="contTres">
+
+        </div>
+    </div>
+</body>
+</html>
